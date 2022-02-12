@@ -1,2 +1,3 @@
-(lang dune 2.7)
-(name ocaml-starter)
+(lang dune 2.9)
+
+(name helix)

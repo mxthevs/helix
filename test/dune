@@ -1,12 +1,12 @@
 (library
- (name ocaml_starter_test)
- (libraries alcotest starter_lib)
+ (name helix_test)
+ (libraries alcotest helix)
  (modules
   (:standard \ test_runner)))
 
 (executable
  (name test_runner)
- (libraries alcotest ocaml_starter_test)
+ (libraries alcotest helix_test)
  (modules test_runner))
 
 (rule

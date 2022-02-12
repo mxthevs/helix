@@ -1,4 +1,4 @@
-open Ocaml_starter_test
+open Helix_test
 
 (**
   Entrypoint for the test runner.
@@ -8,8 +8,4 @@ open Ocaml_starter_test
 
 let () =
   let open Alcotest in
-  run "Starter_lib"
-    [
-      ("non-zero divisor", Math.division_by_non_zero_numbers);
-      ("zero divisor", Math.division_by_zero);
-    ]
+  run "Helix" []
