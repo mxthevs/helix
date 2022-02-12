@@ -8,12 +8,15 @@
     "watch": "dune build -p #{self.name} -w",
     "test": "esy dune build @test/runtest -f",
     "test:watch": "esy dune build @test/runtest -f -w",
-    "utop": "esy dune utop lib -- -implicit-bindings",
+    "utop": "esy dune utop src -- -implicit-bindings",
     "doc": "esy dune build @doc"
   },
   "dependencies": {
     "ocaml": "4.12.x",
-    "@opam/dune": "*"
+    "@opam/dune": "*",
+    "@opam/piaf": "*",
+    "@opam/yojson": "*",
+    "@opam/ppx_deriving_yojson": "*"
   },
   "devDependencies": {
     "@opam/merlin": "*",
@@ -23,5 +26,8 @@
     "@opam/utop": "*",
     "@opam/alcotest": "*",
     "@opam/odoc": "*"
+  },
+  "resolutions": {
+    "esy-openssl": "esy-packages/esy-openssl#619ae2d46ca981ec26ab3287487ad98b157a01d1"
   }
 }
