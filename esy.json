@@ -1,0 +1,27 @@
+{
+  "name": "ocaml-starter",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "scripts": {
+    "watch": "dune build -p #{self.name} -w",
+    "test": "esy dune build @test/runtest -f",
+    "test:watch": "esy dune build @test/runtest -f -w",
+    "utop": "esy dune utop lib -- -implicit-bindings",
+    "doc": "esy dune build @doc"
+  },
+  "dependencies": {
+    "ocaml": "4.12.x",
+    "@opam/dune": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "@opam/ocaml-lsp-server": "*",
+    "@opam/ocamlformat": "*",
+    "@opam/ocamlformat-rpc": "*",
+    "@opam/utop": "*",
+    "@opam/alcotest": "*",
+    "@opam/odoc": "*"
+  }
+}
